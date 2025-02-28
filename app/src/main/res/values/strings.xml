@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ACT CAFE</string>
+    <string name="please_select_language">Please select language</string>
+    <string name="you_can_change_this_later_in_settings">You can change this later in settings</string>
+    <string name="menu">Menu</string>
+    <string name="you_will_save_your_time_by_getting_online_order">you will save your time by getting online order</string>
+    <string name="easy_ordering">Easy Ordering</string>
+    <string name="scan_qr_room_code">Scan QR Room Code</string>
+    <string name="scan_qr_room_code_to_get_the_menu">Scan QR room code to get the menu</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="skip">Skip</string>
+    <string name="profile">Profile</string>
+    <string name="orders">Orders</string>
+    <string name="about">About App</string>
+    <string name="share">Share App</string>
+</resources>

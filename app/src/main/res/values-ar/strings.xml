@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="please_select_language">من فضلك اختر اللغة</string>
+    <string name="you_can_change_this_later_in_settings">يمكنك تغيير هذا لاحقا في الإعدادت</string>
+    <string name="menu">القائمة</string>
+    <string name="you_will_save_your_time_by_getting_online_order">ستوفر وقتك بطلبك اونلاين</string>
+    <string name="easy_ordering">طلب سهل</string>
+    <string name="scan_qr_room_code">افحص رمز الغرفة</string>
+    <string name="scan_qr_room_code_to_get_the_menu">امسح رمز الغرفة لتحصل على القائمة</string>
+    <string name="next">التالي</string>
+    <string name="start">ابدأ</string>
+    <string name="scan_qr">فحص QR</string>
+    <string name="skip">تخطي</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="orders">طلباتي</string>
+    <string name="about">حول البرنامج</string>
+    <string name="share">شارك التطبيق</string>
+</resources>
