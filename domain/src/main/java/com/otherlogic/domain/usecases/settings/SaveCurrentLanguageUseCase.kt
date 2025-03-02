@@ -1,6 +1,6 @@
 package com.otherlogic.domain.usecases.settings
 
-import com.otherlogic.domain.repositories.SettingsRepository
+import com.otherlogic.domain.repositories.settings.SettingsRepository
 import javax.inject.Inject
 
 class SaveCurrentLanguageUseCase @Inject constructor(

@@ -8,6 +8,7 @@ import java.util.Locale
 
 object HelperClass {
     const val CURRENT_LANGUAGE = "current_language"
+    const val IMAGE_URL = "https://myres.me/qr_menu/"
     fun getSavedLocale(context: Context): String {
         val sharedPreferences = context.getSharedPreferences("my_preferences", Context.MODE_PRIVATE)
         Log.e(
