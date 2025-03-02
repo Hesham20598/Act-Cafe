@@ -6,6 +6,8 @@ import androidx.activity.ComponentActivity
 import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.DrawerValue
@@ -16,12 +18,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
+import androidx.core.os.LocaleListCompat
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
@@ -49,7 +53,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge(
@@ -59,7 +63,9 @@ class MainActivity : ComponentActivity() {
                 OrangeColor.toArgb()
             )
         )
-        setLocale(getSavedLocale(this))
+
+        AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(getCurrentLocale().language))
+//        setLocale(getSavedLocale(this))
 
         setContent {
             ACTCAFETheme {
@@ -77,7 +83,7 @@ fun MainActivityContent() {
         mutableStateOf(context.getCurrentLocale().language == "ar")
     }
     val navController = rememberNavController()
-    var paddingValues by rememberSaveable {
+    var paddingValues by remember {
         mutableStateOf<PaddingValues?>(null)
     }
     val vm: MainViewModel = hiltViewModel()

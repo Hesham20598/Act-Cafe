@@ -10,6 +10,8 @@ android {
     compileSdk = 35
 
     defaultConfig {
+
+        resConfigs("en","ar")
         applicationId = "com.otherlogic.actcafe"
         minSdk = 24
         targetSdk = 34
