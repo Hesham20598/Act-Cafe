@@ -59,7 +59,7 @@ class MainActivity : ComponentActivity() {
                 OrangeColor.toArgb()
             )
         )
-//        setLocale(getSavedLocale(this))
+        setLocale(getSavedLocale(this))
 
         setContent {
             ACTCAFETheme {

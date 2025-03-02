@@ -73,7 +73,7 @@ fun LanguageScreen(
                 .background(Color.White)
                 .clickable(interactionSource = null, indication = null) {
                     vm.saveCurrentLanguage("ar")
-//                    context.setLocale("ar")
+                    context.setLocale("ar")
                     navHostController.navigate(Screens.DashboardScreen.name)
                 }, elevation = CardDefaults.cardElevation(8.dp)
         ) {
